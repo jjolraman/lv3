@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.buttons {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.bigbutton {
+  cursor: pointer;
+  border-radius: 8px;
+  color: black;
+  height: 50px;
+  width: 200px;
+  border: 3px solid rgb(85, 239, 196);
+  background-color: white;
+  font-weight: 600;
+}
+
+.midbutton {
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: rgb(85, 239, 196);
+  color: rgb(0, 0, 0);
+  height: 45px;
+  width: 130px;
+}
+
+.smallbutton {
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: rgb(85, 239, 196);
+  color: black;
+  height: 40px;
+  width: 100px;
+}
+
+.bigbutton2 {
+  cursor: pointer;
+  border-radius: 8px;
+  color: red;
+  height: 50px;
+  width: 200px;
+  border: none;
+  background-color: white;
+  border: 3px solid rgb(250, 177, 160);
+  font-weight: 600;
+}
+
+.midbutton2 {
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: rgb(250, 177, 160);
+  color: red;
+  height: 45px;
+  width: 130px;
+}
+
+.smallbutton2 {
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: rgb(250, 177, 160);
+  color: red;
+  height: 40px;
+  width: 100px;
+}
+
+.inputs {
+  border-radius: 8px;
+  width: 200px;
+  height: 30px;
+  gap: 10px;
+}
+
+.modalbuttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.modalbutton {
+  border-radius: 8px;
+  border: none;
+  width: 100px;
+  height: 40px;
+}
+
+.bigmodalbutton {
+  border-radius: 8px;
+  width: 200px;
+  height: 50px;
+  margin-top: 50px;
+}
+
+.selectbox {
+  border: solid 3px gray;
+}
+
+.selects {
+  height: 40px;
+  width: 300px;
+  background-color: white;
+  border-radius: 12px;
+  padding: auto;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modal-content {
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
 }
